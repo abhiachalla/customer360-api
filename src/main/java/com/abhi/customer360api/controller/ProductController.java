@@ -39,4 +39,9 @@ public class ProductController {
     product = productService.getProductById(id);
     return ResponseEntity.ok(product);
   }
+
+  @GetMapping("/")
+  public String getHello(){
+    return "Hello";
+  }
 }
